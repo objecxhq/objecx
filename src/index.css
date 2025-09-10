@@ -1,96 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Objecx Design System - Futuristic Dark Theme with Red Accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Objecx Brand Colors - Dark Theme */
+    --background: 220 13% 9%;
+    --foreground: 210 20% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 13% 11%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 11%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Vibrant Red Primary */
+    --primary: 0 84% 60%;
+    --primary-foreground: 210 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Subtle Gray Secondary */
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 13%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 84% 60%;
+    --accent-foreground: 210 20% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 18%;
+    --input: 220 13% 15%;
+    --ring: 0 84% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Objecx Custom Colors */
+    --tech-gradient-start: 220 13% 9%;
+    --tech-gradient-end: 220 13% 6%;
+    --red-glow: 0 84% 60%;
+    --red-glow-muted: 0 84% 40%;
+    --gray-subtle: 220 9% 46%;
+    --gray-border: 220 13% 18%;
+    --surface-elevated: 220 13% 13%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    /* Keep same values for consistency */
+    --background: 220 13% 9%;
+    --foreground: 210 20% 98%;
+    --card: 220 13% 11%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 13% 11%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 0 84% 60%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 210 20% 85%;
+    --muted: 220 13% 13%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 0 84% 60%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 13% 18%;
+    --input: 220 13% 15%;
+    --ring: 0 84% 60%;
   }
 }
 
@@ -100,6 +81,88 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  /* Objecx Custom Animations */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsl(var(--red-glow) / 0.3);
+    }
+    to {
+      box-shadow: 0 0 40px hsl(var(--red-glow) / 0.6);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Tech Grid Pattern */
+  .tech-grid {
+    background-image: 
+      linear-gradient(hsl(var(--gray-border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--gray-border)) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+  }
+
+  /* Gradient Backgrounds */
+  .gradient-tech {
+    background: linear-gradient(135deg, 
+      hsl(var(--tech-gradient-start)), 
+      hsl(var(--tech-gradient-end)));
+  }
+
+  .gradient-red {
+    background: linear-gradient(135deg, 
+      hsl(var(--red-glow) / 0.1), 
+      transparent 70%);
+  }
+
+  /* Text Gradients */
+  .text-gradient-red {
+    background: linear-gradient(135deg, 
+      hsl(var(--red-glow)), 
+      hsl(var(--red-glow-muted)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer components {
+  /* Hero Button Variant */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold 
+           hover:bg-primary/90 transition-all duration-300 
+           hover:shadow-[0_0_30px_hsl(var(--red-glow)/0.5)]
+           border border-primary/20;
+  }
+
+  /* Project Card */
+  .project-card {
+    @apply bg-card border border-border rounded-xl p-6 
+           hover:border-primary/30 transition-all duration-300
+           hover:bg-surface-elevated/50
+           hover:shadow-[0_8px_30px_hsl(var(--red-glow)/0.1)];
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    @apply py-20 px-6;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto;
   }
 }
