@@ -45,7 +45,7 @@ const ProjectsSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mockProjects.map((project) => (
-            <div key={project.name} className="project-card group">
+            <div key={project.name} className="project-card group flex flex-col">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
@@ -57,11 +57,11 @@ const ProjectsSection = () => {
                 {project.name}
               </h3>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
                 {project.description}
               </p>
               
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 mt-auto">
                 <Button
                   variant="secondary"
                   size="sm"
