@@ -12,32 +12,11 @@ interface Project {
 // Mock data - this can be replaced with real GitHub API integration later
 const mockProjects: Project[] = [
   {
-    name: "DevTools Pro",
-    description: "Advanced development tools for modern web applications with real-time debugging capabilities.",
-    language: "TypeScript",
-    stars: 1240,
-    githubUrl: "https://github.com/objecxhq/devtools-pro"
-  },
-  {
     name: "Design System UI",
     description: "A comprehensive design system built for scalable applications with beautiful components.",
     language: "React",
     stars: 856,
     githubUrl: "https://github.com/objecxhq/design-system-ui"
-  },
-  {
-    name: "Performance Monitor",
-    description: "Real-time performance monitoring and analytics for web applications.",
-    language: "JavaScript",
-    stars: 623,
-    githubUrl: "https://github.com/objecxhq/performance-monitor"
-  },
-  {
-    name: "Code Generator",
-    description: "Intelligent code generation tool powered by modern AI for rapid development.",
-    language: "Python",
-    stars: 2100,
-    githubUrl: "https://github.com/objecxhq/code-generator"
   },
   {
     name: "API Gateway",
