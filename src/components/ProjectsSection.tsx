@@ -47,8 +47,12 @@ const ProjectsSection = () => {
           {mockProjects.map((project) => (
             <div key={project.name} className="project-card group flex flex-col">
               <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+                <div className="flex items-center space-x-3">
+                  <img 
+                    src="/placeholder.svg" 
+                    alt={`${project.name} logo`}
+                    className="w-8 h-8"
+                  />
                   <span className="text-sm text-muted-foreground">{project.language}</span>
                 </div>
               </div>
