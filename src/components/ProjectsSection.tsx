@@ -1,11 +1,10 @@
-import { ExternalLink, Github, Star } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 
 interface Project {
   name: string;
   description: string;
   language: string;
-  stars: number;
   githubUrl: string;
 }
 
@@ -15,21 +14,18 @@ const mockProjects: Project[] = [
     name: "Design System UI",
     description: "A comprehensive design system built for scalable applications with beautiful components.",
     language: "React",
-    stars: 856,
     githubUrl: "https://github.com/objecxhq/design-system-ui"
   },
   {
     name: "API Gateway",
     description: "Lightweight and fast API gateway with advanced routing and security features.",
-    language: "Go",
-    stars: 445,
+    language: "Python",
     githubUrl: "https://github.com/objecxhq/api-gateway"
   },
   {
     name: "Data Visualizer",
     description: "Interactive data visualization library with customizable charts and graphs.",
     language: "TypeScript",
-    stars: 789,
     githubUrl: "https://github.com/objecxhq/data-visualizer"
   }
 ];
@@ -54,10 +50,6 @@ const ProjectsSection = () => {
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
                   <span className="text-sm text-muted-foreground">{project.language}</span>
-                </div>
-                <div className="flex items-center space-x-1 text-muted-foreground">
-                  <Star className="w-4 h-4" />
-                  <span className="text-sm">{project.stars.toLocaleString()}</span>
                 </div>
               </div>
               
