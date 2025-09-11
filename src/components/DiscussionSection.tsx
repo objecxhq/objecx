@@ -67,7 +67,7 @@ const DiscussionSection = () => {
             asChild
           >
             <a 
-              href="https://github.com/objecxhq/objecx-public-discussion" 
+              href="https://github.com/orgs/objecxhq/discussions" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2"
