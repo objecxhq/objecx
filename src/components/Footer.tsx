@@ -8,11 +8,6 @@ const Footer = () => {
       name: "GitHub",
       url: "https://github.com/objecxhq",
       icon: Github
-    },
-    {
-      name: "Vercel",
-      url: "https://vercel.com/objecx",
-      icon: ExternalLink
     }
   ];
 
