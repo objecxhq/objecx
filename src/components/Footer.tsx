@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-surface-elevated/20">
       <div className="container-width py-12">
-        <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 px-6">
           {/* Logo and Copyright */}
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
             <div className="flex items-center">
