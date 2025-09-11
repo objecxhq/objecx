@@ -22,8 +22,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
           {/* Logo and Copyright */}
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
-            <div className="text-2xl font-bold">
-              <span className="text-gradient-red">Objecx</span>
+            <div className="flex items-center">
+              <img 
+                src="/placeholder.svg" 
+                alt="Objecx Logo" 
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-muted-foreground text-sm">
               © {currentYear} Objecx. All rights reserved.
